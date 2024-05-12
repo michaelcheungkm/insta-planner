@@ -1,0 +1,3 @@
+<template>
+  <PagePlannerIndex />
+</template>
