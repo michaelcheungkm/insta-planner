@@ -1,3 +1,0 @@
-<template>
-  <PagePlannerIntroduction />
-</template>
