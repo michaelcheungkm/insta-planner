@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insta-Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <h1>Insta-Planner</h1>
+    <div class="profile-picture-container">
+        <div id="profilePictureDisplay"></div>
+        <input type="file" id="profilePictureInput" accept="image/*">
+        <label for="profilePictureInput" class="profile-picture-label"></label>
+    </div>
+    <section class="controls">
+        <input type="file" id="fileInput" multiple accept="image/*">
+        <label for="fileInput" class="file-input-label"></label>
+        <button id="clearAll"></button>
+        <label for="clearAll" class="clear-all-label"></label>
+    </section>
+    <div id="widthContainer"><div id="imageContainer"></div></div>
+    <script src="renderer.js"></script>
+</body>
+</html>

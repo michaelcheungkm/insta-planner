@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: black;
+    font-family: "Poppins";
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+.controls {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 608px;
+    justify-items: center;
+    box-shadow: 0 4px 0 rgb(255, 255, 255);
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+}
+
+#imageContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4px;
+    row-gap: 0px;
+    justify-items: center;
+    background-color:black;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+#imageContainer img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: move;
+    background-color: white;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    opacity: 0;
+}
+
+.delete-button:hover {
+    opacity: 1;
+}
+
+#widthContainer {
+    width: 608px;
+    margin:auto;
+}
+
+#fileInput {
+    display: none; /* Hide the default file input */
+}
+
+.file-input-label {
+    width: 50px;
+    height: 50px;
+    background-color: #000000; /* Change to desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/upload-icon.png'); /* Path to your icon image */
+    background-size: cover;
+}
+
+.file-input-label:hover {
+    filter: brightness(5);
+}
+
+#clearAll {
+    display: none;
+}
+
+.clear-all-label {
+    width: 50px;
+    height: 50px;
+    background-color: #000000; /* Change to desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/clear-all-icon.png'); /* Path to your icon image */
+    background-size: cover;
+}
+
+.clear-all-label:hover {
+    filter: brightness(5);
+}
+
+.profile-picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profilePictureInput {
+    display: none; /* Hide the default file input */
+}
+
+.profile-picture-label {
+    width: 30px;
+    height: 30px;
+    background-color: #007BFF; /* Change to desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url('assets/profile-upload-icon.png'); /* Path to your profile upload icon image */
+    background-size: cover;
+    margin-top: 15px;
+}
+
+#profilePictureDisplay {
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profilePictureDisplay img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}

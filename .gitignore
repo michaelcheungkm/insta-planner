@@ -1,0 +1,11 @@
+/dist/
+/node_modules/
+*.log
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+/build/
+/coverage/
+/Insta-ller/
